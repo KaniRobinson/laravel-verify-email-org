@@ -1,0 +1,38 @@
+{
+    "name": "kanirobinson/laravel-verify-email-org",
+    "description": "Laravel Email Verification Package for the website https://verify-email.org",
+    "keywords": ["verify-email", "laravel", "email", "verification", "validation"],
+    "type": "laravel-package",
+    "require": {
+        "guzzlehttp/guzzle": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "psr/log": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KaniRobinson",
+            "email": "me@kanirobinson.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "KaniRobinson\\LaravelVerifyEmailOrg\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KaniRobinson\\LaravelVerifyEmailOrg\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
